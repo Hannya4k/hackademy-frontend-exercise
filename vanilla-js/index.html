@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Karl's Expense Tracker</h1>
+
+  <form>
+    <div class="container">
+      <div class="input-group">
+        <label class="description">Description: </label>
+        <input name="description" type="text" placeholder="Enter Description" required />
+      </div>
+
+      <div class="input-group">
+        <label class="Amount">Amount: </label>
+        <input name="amount" type="text" placeholder="Enter Amount" required />
+      </div>
+
+      <div class="btnExpense">
+        <button type="submit">Add Expense</button>
+      </div>
+    </div>
+  </form>
+
+  <script type="module">
+    import { expenses } from "/main.js";
+  </script>
+
+  <p>Total Expenses <b id="totalAmount">PHP </b></p>
+  <h3>My Expenses</h3>
+  <div id="expenses"></div>
+
+</body>
+
+</html>
